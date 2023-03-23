@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    background-color: violet;
+}
+header h2{
+    font-size: 50px;
+}
+nav a{
+    margin-left: 50px;
+    text-decoration: none;
+}
+nav button{
+    margin-left: 50px;
+    padding: 5px 15px;
+    background-color: blue;
+    border-radius: 15px;
+    border: none;
+}
+.toggle{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+
+}
+@media screen and (max-width: 900px) {
+    nav{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        padding: 15px;
+    }
+    .mobile-nav{
+        display:flex;
+        transition: all 3s ease-in-out;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 0;
+        background-color: red;
+        overflow: hidden;
+        
+    }
+    .display{
+        height: 50%;
+        /* padding: 20px;    */
+    }
+}
